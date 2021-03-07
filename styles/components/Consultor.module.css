@@ -1,0 +1,88 @@
+.consultorContainer {
+    background-color: var(--light-blue);
+    width: 300px;
+    height: 300px;
+    border-radius: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.consultorContainer form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.consultorContainer form .inputBlock {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: var(--white);
+    font-weight: bold;
+    margin: .5rem 0;
+}
+
+.consultorContainer form label {
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.normalCep {
+    color: var(--green);
+}
+
+.consultorContainer form .inputBlock input {
+    padding: 1rem;
+    outline: none;
+    border: none;
+    font-family: inherit;
+    border-radius: 1rem;
+    background-color: var(--marine-blue);
+}
+
+.consultorContainer form .inputBlock:last-child{
+    align-self: stretch;
+}
+
+.consultorContainer form .inputBlock:last-child input {
+    cursor: pointer;
+    width: 100%;
+    margin: 0 2.5rem;
+    padding: 1rem;
+    outline: none;
+    border: none;
+    font-family: inherit;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: var(--marine-blue);
+    color: var(--white);
+    border-radius: 1rem;
+}
+
+.consultorContainer form .inputBlock:last-child input:active {
+    transform: scale(1.1);
+}
+
+.consultorContainer form .inputBlock .error {
+    color: var(--red);
+}
+
+/*
+    Não faz sentido ter um efeito de hover no celular.
+*/
+@media screen and (min-width: 1000px) {
+
+    .consultorContainer form .inputBlock:last-child input {
+        transition: all .2s;
+    }
+
+    .consultorContainer form .inputBlock:last-child input:hover {
+        color: var(--green);
+        transform: scale(1.1);
+    }
+}

@@ -1,0 +1,29 @@
+.resultContainer {
+    margin-top: 1rem;
+    background-color: var(--marine-blue);
+    padding: 1rem;
+    color: var(--green);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resultContainer h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.addressInfo .addressInfoPiece {
+    margin: .4rem 0;
+}
+
+.addressInfo .addressInfoPiece span:first-child {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-right: .3rem;
+}
+
+.addressInfo .addressInfoPiece span:nth-child(2) {
+    font-size: 1.3rem;
+}
